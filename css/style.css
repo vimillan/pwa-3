@@ -1,0 +1,10 @@
+.padre-table{
+    display: table;
+    width: 100%;
+  }
+   
+  .padre-table > div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
