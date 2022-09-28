@@ -5,7 +5,7 @@ console.log("SW: Hola Mundo Violeta!");
 self.addEventListener("install", (event) => {
   console.log(INIT_MSG, "install");
   const promiseCache = caches.open('cache-v1.1').then((cache) => {
-    return cache.addAll([
+    /*return cache.addAll([
       './',
       './index.html',
       './pwa-3/images/lapras.png',
@@ -16,10 +16,9 @@ self.addEventListener("install", (event) => {
       './pages/Sumar.html',
       './pages/Restar.html',
       './pages/Multiplicar.html'
-    ])
-    /*return cache.addAll([
-      '/',
-      '/pwa-3',
+    ])*/
+    return cache.addAll([
+      '/pwa-3/',
       '/pwa-3/index.html',
       '/pwa-3/images/lapras.png',
       '/pwa-3/css/style.css',
@@ -28,8 +27,8 @@ self.addEventListener("install", (event) => {
       '/pwa-3/pages/Dividir.html',
       '/pwa-3/pages/Sumar.html',
       '/pwa-3/pages/Restar.html',
-      '/pwa-3/pages/Multiplicar.html',
-    ])*/
+      '/pwa-3/pages/Multiplicar.html'
+    ])
   })
 
   event.waitUntil(promiseCache)
