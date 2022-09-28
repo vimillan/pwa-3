@@ -20,6 +20,7 @@ self.addEventListener("install", (event) => {
     return cache.addAll([
       '/pwa-3/',
       '/pwa-3/index.html',
+      '/pwa-3/js/app.js',
       '/pwa-3/images/lapras.png',
       '/pwa-3/css/style.css',
       'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
